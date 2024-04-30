@@ -12,11 +12,14 @@ public class LightBoard
   {
     lights = new boolean[numRows][numCols];
     for ( int r =0; r < numRows; r ++)
+      {
     for ( int c  = 0; c < numCols; c++)
+      {
     double rnd = Math.random();
    lights[r][c] = rnd < 0.4;
     /* to be implemented in part (a) */
-
+      }
+      }
   }
 
   /** Evaluates a light in row index row and column index col and returns a status
